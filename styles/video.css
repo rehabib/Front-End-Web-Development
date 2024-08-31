@@ -1,0 +1,131 @@
+p{
+    font-family:Roboto, Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.thumbnail{
+    font-size:30px;
+    width:100%;
+    height:70%;
+}
+.search-bar{
+    font-size:20px;
+    margin-left:12px;
+    display: block;
+}
+.video-title{
+    width:300px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 8px;
+    margin-bottom: 12px;
+   }
+   .video-author,.video-stats{
+       font-size: 12px;
+       color:rgb(10, 5, 12);
+   }
+   .video-author{
+       margin-bottom: 4px;
+   }
+              
+.remprof{
+    width:55px;
+border-radius:60px;  
+  vertical-align: top;
+}
+.remgrad{
+    width:55px;
+    height:55px;
+    border-radius:60px;  
+    vertical-align: top;  
+}
+
+
+.ch1,.ch7,.ch8,.ch9,.ch3,.ch5{
+    display:flex;
+    justify-content: start;
+    flex-direction: row;
+
+}
+
+.channel1,.channel5,.channel7,.channel3,.channel8,.channel9{
+    position:relative;
+    
+    
+}
+.channel1 .tooltip,.channel5 .tooltip,.channel3 .tooltip,.channel7 .tooltip,.channel8 .tooltip,.channel9 .tooltip{
+    position:absolute;
+    padding-top: 4px;
+    border-radius: 4px;
+    background-color: pink;
+    color: rgb(227, 18, 129);
+    padding-bottom:4px;
+    padding-right:6px;
+    padding-left:6px;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity:0;
+    bottom:-65px;
+    pointer-events: none;
+    box-shadow: 1px 2px 1px 2px lightcyan;
+    transition: opacity 0.15s;
+
+}
+
+.channel1:hover .tooltip,.channel5:hover .tooltip,.channel3:hover .tooltip,.channel7:hover .tooltip ,.channel8:hover .tooltip,.channel9:hover .tooltip{
+
+opacity:1;
+white-space: nowrap;
+
+}
+.channel7:hover .tool{
+    opacity:1;
+    white-space: nowrap;
+    
+}
+.channel2,.channel4,.channel6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+/*Comment*/
+.gridlayout{
+    display:grid;
+    z-index: 100;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 5px;
+    
+}
+@media(max-width:750px){
+    .gridlayout{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:751px) and (max-width:1199px){
+    .gridlayout{
+        grid-template-columns: 1fr 1fr 1fr;
+}
+}
+@media(min-width:1200px) {
+    .gridlayout{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }   
+}
+
+.thumbnail-row{
+    margin-bottom: 12px;
+    position:relative;
+}
+.video-time{
+    font-family: Roboto, Areal;
+    font-size: 12px;
+    font-weight:500;
+    padding:4px 4px 4px 2px;
+    border-radius:2px;
+    position:absolute;
+    background-color: black;
+    color:white;
+    bottom: 10px;
+    right: 10px;
+}
